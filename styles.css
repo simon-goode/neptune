@@ -178,7 +178,7 @@ form {
     border-radius: 5px;
     line-height: 22px;
     background-color: transparent;
-    border: 2px solid #3e5179;
+    border: 2px solid #CAD1DF;
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -202,7 +202,7 @@ textarea {
     width: 100%;
     background: #3e5179;
     border-radius: 5px;
-    border: 0;
+    border: 2px solid #CAD1DF;
     cursor: pointer;
     color: white;
     font-size: 24px;
