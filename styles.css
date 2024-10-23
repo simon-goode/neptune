@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 /* General styles */
 html {
     background-color: #222739;
@@ -37,6 +39,14 @@ font-weight:bold;
     margin: 10px auto;   /* Space around the line */
 }
 
+.text-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 30%);
+    margin-left: 33vw;
+    margin-right: 33vw;
+    margin-top: 25px;
+}
+
 /* Logo styling */
 .logo {
 width: 240px;
@@ -45,6 +55,19 @@ display: block;
 margin: 0 auto;
 transition: transform 1s ease-in-out;
 transform-origin: center;
+}
+
+.logo-corner {
+    width: 80px;
+    height: auto;
+    margin: 0;
+    display: inline-block;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 auto;
 }
 
 /* Navbar styling */
@@ -83,4 +106,120 @@ header a {
 .top-block {
     height: 80px;
     padding: 0px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 40%);
+    color: white;
+    padding: 10px 200px;
+    vertical-align: middle;
+}
+
+.left-nav {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.text-area {
+    padding: 0 30vw;
+    padding-top: 4vh;
+    text-align: left;
+}
+
+.body-text {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    padding: 0 30vw;
+    line-height: 1.6rem;
+}
+
+.body-header {
+    padding-top: 0px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    color: white;
+    text-align: left;
+    padding: 0 30vw;
+    line-height: 1.6rem;
+}
+
+.text-list {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 16px;
+    color: white;
+    text-align: left;
+    padding: 0 30vw;
+    line-height: 1.6rem;
+}
+
+li + li {
+    margin-top: 15px;
+}
+
+form {
+    max-width: 420px;
+    margin: 50px auto;
+}
+
+.feedback-input {
+    color:white;
+    font-family: 'CustomFont', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #3e5179;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #689aff;
+}
+
+textarea {
+    height: 240px;
+    line-height: 150%;
+    resize: none;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #3e5179;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+[type="submit"]:hover {
+    background: #689aff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: white;
 }
