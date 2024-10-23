@@ -234,7 +234,7 @@ input:-webkit-autofill:active {
 
 circle {
     fill: transparent;
-    stroke: #CAD1DF;
+    stroke: rgb(245, 245, 245);
     stroke-width: 6px;
     stroke-dasharray: 536;
     stroke-dashoffset: 536;
