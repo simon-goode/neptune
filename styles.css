@@ -223,3 +223,11 @@ input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: white;
 }
+
+.email-link {
+    color: white;
+    font-size: 28px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    font-weight: bold;
+}
