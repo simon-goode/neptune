@@ -1,0 +1,86 @@
+/* General styles */
+html {
+    background-color: #222739;
+    justify-content: center;
+}
+
+/* Import the custom font */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('fonts/Rubik-VF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+/* General styles */
+body {
+font-family: 'CustomFont', Arial, sans-serif;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+/* Header styles */
+header {
+padding-top: 0px;
+padding-bottom: 20px;
+font-size: 24px;
+color: white;
+font-weight:bold;
+}
+
+  /* Divider (thin white line) */
+.divider {
+    width: 330px;         /* Adjust width as needed */
+    height: 1px;
+    background-color: rgba(255, 255, 255, 30%);
+    margin: 10px auto;   /* Space around the line */
+}
+
+/* Logo styling */
+.logo {
+width: 240px;
+height: auto;
+display: block;
+margin: 0 auto;
+transition: transform 1s ease-in-out;
+transform-origin: center;
+}
+
+/* Navbar styling */
+.navbar {
+list-style-type: none;
+padding: 0;
+}
+
+.navbar li {
+display: inline;
+margin: 0 15px;
+}
+
+.navbar a {
+text-decoration: none;
+color: white;
+font-weight: bold;
+font-size: 20px;
+}
+
+.navbar a:hover {
+text-decoration: none;
+color: rgb(200, 200, 200)
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.top-block {
+    height: 80px;
+    padding: 0px;
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <title>Neptune</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-block"></div>
+    
+    <img src="assets/logo.png" alt="Site Logo" class="logo" id="logo">
+    <header>
+        <h1>
+            <a href="index.html">Neptune Research</a>
+        </h1>
+        <div class="divider"></div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/apply.html">Apply</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        let logo = document.getElementById('logo');   
+        let rotationAngle = 0; 
+        logo.addEventListener('click', () => {
+            logo.style.transition = 'transform 1s ease-in-out';   
+            logo.style.transform = 'rotate(360deg)';
+            setTimeout(() => {
+                logo.style.transition = 'transform 0s ease-in-out';
+                logo.style.transform = 'rotate(0deg)';
+            }, 1000);
+        });
+      </script>
+</body>
+</html>
