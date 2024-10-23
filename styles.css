@@ -225,7 +225,7 @@ input:-webkit-autofill:active {
 }
 
 .email-link {
-    color: white;
+    color: rgb(165, 188, 229);
     font-size: 28px;
     padding-bottom: 20px;
     padding-top: 15px;
