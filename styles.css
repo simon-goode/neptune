@@ -51,8 +51,8 @@ font-weight:bold;
 .logo {
 width: 240px;
 height: auto;
-display: block;
 margin: 0 auto;
+display: flex;
 transition: transform 1s ease-in-out;
 transform-origin: center;
 }
@@ -99,8 +99,8 @@ header a {
 }
 
 .logo-container {
-    display: inline-block;
-    cursor: pointer;
+    align-items: center;
+    vertical-align: center;
 }
 
 .top-block {
@@ -230,4 +230,42 @@ input:-webkit-autofill:active {
     padding-bottom: 20px;
     padding-top: 15px;
     font-weight: bold;
+}
+
+circle {
+    fill: transparent;
+    stroke: #CAD1DF;
+    stroke-width: 6px;
+    stroke-dasharray: 536;
+    stroke-dashoffset: 536;
+    transform-origin: center;
+    transform: rotate(-90deg)
+}
+@keyframes spin-animation1 {
+    0% {
+        stroke-dashoffset: 536;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes spin-animation2 {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dashoffset: -536;
+    }
+}
+
+svg {
+    height: 210px;
+    position: absolute;
+    top: 95px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: fit-content;
+    z-index: -1;
+    vertical-align: center;
 }

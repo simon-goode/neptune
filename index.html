@@ -8,9 +8,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <svg>
+        <circle cx="150" cy="105" r="85" id="circle"/>
+    </svg>
     <div class="top-block"></div>
-    
-    <img src="assets/logo.png" alt="Site Logo" class="logo" id="logo">
+    <div class="logo-container">
+        <img src="assets/logo.png" alt="Site Logo" class="logo" id="logo">
+    </div>
     <header>
         <h1>
             <a href="index.html">Neptune Research</a>
@@ -27,13 +31,15 @@
 
     <script>
         let logo = document.getElementById('logo');   
-        let rotationAngle = 0; 
+        let circle = document.getElementById('circle')
         logo.addEventListener('click', () => {
             logo.style.transition = 'transform 1s ease-in-out';   
             logo.style.transform = 'rotate(360deg)';
+            circle.style.animation = 'spin-animation1 1s ease-in-out';
             setTimeout(() => {
                 logo.style.transition = 'transform 0s ease-in-out';
                 logo.style.transform = 'rotate(0deg)';
+                circle.style.animation = "spin-animation2 1s ease-in-out";
             }, 1000);
         });
       </script>
